@@ -1,0 +1,10 @@
+{
+  "search.exclude": {
+    "node_modules": true,
+    "build": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2
+}
