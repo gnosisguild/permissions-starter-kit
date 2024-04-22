@@ -1,5 +1,4 @@
 node_modules
-.yarn
-eth-sdk/abis
+contracts/abis
 build
-packate.json
+package.json

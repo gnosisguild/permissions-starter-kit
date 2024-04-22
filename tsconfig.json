@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "declaration": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2022",
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["ES2023"],
+    "types": ["jest"]
+  },
+  "include": ["roles/**/*", "contracts.ts", ".lib/**/*"],
+  "exclude": ["node_modules", "build"]
+}
