@@ -72,15 +72,16 @@ In the _permissions.ts_ for your role, type `allow.`.
 You will see suggestions popping up next to your cursor.
 Select the path to the target contract as previously defined in [contracts.ts](./contracts.ts).
 
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGJjc2JzYnY1NHVsZTVvMGNoYTM0eWs4cXBzNTd6cnA1Y3hiaDVnYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Xqp23A5ISwGlvKL3TH/giphy.gif" alt="Using suggestion to complete permissions" />
+<img src="https://i.imgur.com/2jKAoNk.gif" alt="Using suggestion to complete permissions" />
 
 If the suggestions you get in the editor do not reflect the structure of your [contracts.ts](./contracts.ts) records, make sure to follow the [three steps described above](#sdk-setup-steps).
 
 #### Set conditions on parameters
 
 For scoping allowed values for individual function parameters, you can leverage the Roles Modifier's conditions system.
+Condition functions are available under the global `c` variable.
 
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2x2Z3VqOHFlYjhrcjg2dm9wcGxzbmJnbnppbXdjbHlob200MTVlOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8sGDcKWVdZBrQZBErf/giphy.gif" alt="Scope function parameters using conditions">
+Read more about conditions in the the [documentation](https://docs.roles.gnosisguild.org/sdk/conditions).
 
 ### Apply permissions
 
