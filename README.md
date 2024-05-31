@@ -5,6 +5,8 @@ Out of the box starting point for managing [Zodiac Roles](https://roles.gnosisgu
 Keep the configuration of your Zodiac Roles Modifier as declarative statements in code.
 The provided tooling automatically applies updates in a consistent and efficient way.
 
+Learn more about the motivation behind this approach in our blog ["Permissions as Code"](https://engineering.gnosisguild.org/posts/permissions-as-code).
+
 ## Getting Started
 
 [Use this template](https://github.com/new?template_name=permissions-starter-kit&template_owner=gnosisguild) to create a repository for your roles configuration.
