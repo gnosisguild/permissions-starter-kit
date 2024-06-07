@@ -41,7 +41,7 @@ This will provide automatic suggestions and correctness checks while authoring p
 Open [contracts.ts](./contracts.ts) in the editor and add labels and addresses of any contracts you plan to use as targets in your permissions.
 At the top level of the exported object, define the host blockchain.
 The following values are supported:
-`mainnet`, `gnosis`, `polygon`, `arbitrumOne`, `avalanche`, `polygonMumbai`, `sepolia`
+`mainnet`, `gnosis`, `polygon`, `arbitrumOne`, `avalanche`, `base`, `polygonMumbai`, `sepolia`
 
 Then, insert all target contract addresses as records using recognizable labels:
 
@@ -141,5 +141,6 @@ Chain prefixes for the supported chains are as follows:
 - Polygon: `matic`
 - Arbitrum One: `arb1`
 - Avalanche: `avax`
+- Base: `base`
 - Polygon Mumbai Testnet: `maticMumbai`
 - Sepolia Testnet: `sep`

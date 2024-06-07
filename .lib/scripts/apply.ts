@@ -1,6 +1,9 @@
 #!/usr/bin/env ts-node
+import assert from "assert";
+import open from "open";
 import yargs from "yargs";
 import SafeApiKit from "@safe-global/api-kit";
+import { getAddress } from "ethers/lib/utils";
 import {
   Permission,
   PermissionSet,
@@ -11,11 +14,7 @@ import {
   ChainId,
 } from "zodiac-roles-sdk";
 import { Permissions } from "../types";
-import assert from "assert";
-import open from "open";
 import "../globals";
-import { getAddress } from "ethers/lib/utils";
-import { BigNumber } from "ethers";
 
 const ZODIAC_ROLES_APP = "https://roles.gnosisguild.org";
 
@@ -54,7 +53,7 @@ function parseMod(modArg: string) {
   assert(chainId, `Chain is not supported: ${chainPrefix}`);
 
   // validates a valid ethereum address
-  const address = getAddress(modAddress!);
+  const address = getAddress(modAddress!) as `0x${string}`;
 
   return { chainId, chainPrefix, address };
 }
