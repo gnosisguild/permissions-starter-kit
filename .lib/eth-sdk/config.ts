@@ -1,4 +1,4 @@
-import { defineConfig } from "@dethcrypto/eth-sdk";
+import { defineConfig } from "@gnosis-guild/eth-sdk";
 import { ethSdkConfig } from "zodiac-roles-sdk";
 import contracts from "../../contracts";
 

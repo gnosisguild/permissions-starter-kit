@@ -1,4 +1,4 @@
-import { NestedAddressesInput } from "@dethcrypto/eth-sdk/dist/config";
+import { NestedAddressesInput } from "@gnosis-guild/eth-sdk/dist/config";
 import { ChainId, Permission, PermissionSet, chains } from "zodiac-roles-sdk";
 
 type ChainName = (typeof chains)[ChainId]["name"];

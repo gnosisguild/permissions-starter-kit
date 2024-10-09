@@ -3,7 +3,7 @@ import assert from "assert";
 import open from "open";
 import yargs from "yargs";
 import SafeApiKit from "@safe-global/api-kit";
-import { getAddress } from "ethers/lib/utils";
+import { getAddress } from "ethers";
 import {
   Permission,
   PermissionSet,
