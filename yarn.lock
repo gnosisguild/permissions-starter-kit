@@ -3217,9 +3217,9 @@ zod@^3.11.5:
   integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
 
 zodiac-roles-deployments@^2.2.7:
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/zodiac-roles-deployments/-/zodiac-roles-deployments-2.2.7.tgz#1eb1832c620391437191e233a6862d60ab94a558"
-  integrity sha512-VNVw3zCt4YShmtuR7XWnidAjY0rpoZgMhHS7DfsfHOKWJObup9/GWRtok0w39yvST6A8heTEZ7UKEiL+EtKwRA==
+  version "2.2.8"
+  resolved "https://registry.yarnpkg.com/zodiac-roles-deployments/-/zodiac-roles-deployments-2.2.8.tgz#62c7cf5b452c4a450bd7082e511eccbec16c7fbb"
+  integrity sha512-9J6n/XQewgmtZ8RGUkV1SC+muVqgogkYbTSHO3ygKNeqviFIgpfJia2dGUpUM+P+lTVatpc7FVuSHq6/aHsXZQ==
 
 zodiac-roles-sdk@^2.15.0:
   version "2.15.0"
