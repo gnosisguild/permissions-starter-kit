@@ -41,7 +41,7 @@ This will provide automatic suggestions and correctness checks while authoring p
 Open [contracts.ts](./contracts.ts) in the editor and add labels and addresses of any contracts you plan to use as targets in your permissions.
 At the top level of the exported object, define the host blockchain.
 The following values are supported:
-`mainnet`, `gnosis`, `polygon`, `arbitrumOne`, `avalanche`, `base`, `polygonMumbai`, `sepolia`
+`mainnet`, `gnosis`, `polygon`, `arbitrumOne`, `avalanche`, `base`, `bsc`, `sepolia`
 
 Then, insert all target contract addresses as records using recognizable labels:
 
