@@ -90,7 +90,7 @@ Read more about conditions in the [documentation](https://docs.roles.gnosisguild
 ### Apply Updates
 
 Once you have defined all permissions for the role, you can apply the update to your Roles mod.
-If you need to set up a new Roles mod from scratch, refer to [this tutorial](https://zodiac.wiki/index.php?title=Roles_Modifier:_Operator_Tutorial).
+If you need to set up a new Roles mod from scratch, refer to [this tutorial](https://www.zodiac.wiki/documentation/roles-modifier/roles-modifier-operator-tutorial).
 
 In your terminal, run the following command:
 
@@ -138,9 +138,12 @@ Chain prefixes for the supported chains are as follows:
 
 - Mainnet: `eth`
 - Gnosis Chain: `gno`
+- Optimism: `oeth`
 - Polygon: `matic`
+- Polygon zkEVM: `zkevm`
 - Arbitrum One: `arb1`
 - Avalanche: `avax`
 - Base: `base`
-- Polygon Mumbai Testnet: `maticMumbai`
+- BSC: `bnb`
+- Base Sepolia: `basesep`
 - Sepolia Testnet: `sep`
