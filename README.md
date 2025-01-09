@@ -24,12 +24,21 @@ Roles are defined as folders in the [roles/](./roles) directory.
 Folder names correspond to [role keys](#role-keys).
 The template includes two example roles: `eth_wrapping` and `position_management`.
 You can either rename these folders or create new ones for your role.
+
 Inside the role folder, create or edit the _permissions.ts_ file with the following boilerplate content:
 
 ```typescript
 export default [
   // <- define your permissions here
 ] satisfies Permissions;
+```
+
+Also create or edit the _members.ts_ file, keeping the list of role member addresses:
+
+```typescript
+export default [
+  // <- list all role member addresses here
+] satisfies `0x${string}`[];
 ```
 
 ### Configuring Allowed Target Contracts
@@ -72,7 +81,7 @@ export default {
 
 ### Edit Permissions
 
-In the _permissions.ts_ for your role, type `allow.`.
+In the _permissions.ts_ file for your role, type `allow.`.
 You will see suggestions appearing next to your cursor.
 Select the path to the target contract as previously defined in [contracts.ts](./contracts.ts).
 
@@ -87,9 +96,13 @@ Condition functions are available under the global `c` variable.
 
 Read more about conditions in the [documentation](https://docs.roles.gnosisguild.org/sdk/conditions).
 
+### Edit Members
+
+In the _members.ts_ file for your role, specify the list of addresses you want to assign the role to.
+
 ### Apply Updates
 
-Once you have defined all permissions for the role, you can apply the update to your Roles mod.
+Once you have defined all members and permissions for the role, you can apply the update to your Roles mod.
 If you need to set up a new Roles mod from scratch, refer to [this tutorial](https://www.zodiac.wiki/documentation/roles-modifier/roles-modifier-operator-tutorial).
 
 In your terminal, run the following command:
