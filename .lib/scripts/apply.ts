@@ -12,34 +12,24 @@ import {
   chains,
   fetchRolesMod,
   ChainId,
+  postRole,
 } from "zodiac-roles-sdk";
 import { Permissions } from "../types";
 import "../globals";
-
-const ZODIAC_ROLES_APP = "https://roles.gnosisguild.org";
 
 /**
  * Posts permission to Zodiac Roles app for storage
  * @returns The hash under which permissions have been stored
  */
-const postPermissions = async (
+const post = async (
   permissions: (Permission | PermissionSet | Promise<PermissionSet>)[],
+  members: `0x${string}`[],
 ) => {
   const awaitedPermissions = await Promise.all(permissions);
   const { targets, annotations } = processPermissions(awaitedPermissions);
   checkIntegrity(targets);
 
-  const res = await fetch(`${ZODIAC_ROLES_APP}/api/permissions`, {
-    method: "POST",
-    body: JSON.stringify({ targets, annotations }),
-  });
-  const json = (await res.json()) as any;
-  const { hash } = json;
-  if (!hash) {
-    console.error(json);
-    throw new Error("Failed to post permissions");
-  }
-  return hash;
+  return await postRole({ targets, annotations, members });
 };
 
 function parseMod(modArg: string) {
@@ -57,6 +47,8 @@ function parseMod(modArg: string) {
 
   return { chainId, chainPrefix, address };
 }
+
+const ZODIAC_ROLES_APP = "https://roles.gnosisguild.org";
 
 async function main() {
   const args = await yargs(process.argv.slice(2))
@@ -86,7 +78,11 @@ async function main() {
     await import(`../../roles/${roleArg}/permissions`)
   ).default;
 
-  const hash = await postPermissions(permissions);
+  const members: `0x${string}`[] = (
+    await import(`../../roles/${roleArg}/members`)
+  ).default;
+
+  const hash = await post(permissions, members);
   console.log(`Permissions posted under hash: ${hash}`);
 
   const diffUrl = `${ZODIAC_ROLES_APP}/${modArg}/roles/${roleArg}/diff/${hash}`;
