@@ -127,6 +127,7 @@ Subsequent applications will update the existing role, efficiently removing, upd
 - [contracts.ts](./contracts.ts) – Lists all contracts that are used as targets in permissions
 - [roles/](./roles) – Host directory for role configurations
   - [`role_key`/](./roles/eth_wrapping) – Each subfolder represents a distinct role. The folder name will be used as the [role key](#role-keys).
+    - [members.ts](./roles/eth_wrapping/members.ts) – Assigns the role to the listed member addresses
     - [permissions.ts](./roles/eth_wrapping/permissions.ts) – Defines all permissions for this role
 
 There are some additional files and folders in the template repository, which you won't usually need to edit.
