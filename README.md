@@ -122,6 +122,10 @@ This will direct you to the Roles app, where you can review the updates that wil
 Applying permissions for the first time will create a new role.
 Subsequent applications will update the existing role, efficiently removing, updating, and adding permissions so that the role configuration on chain accurately reflects the permissions defined in code.
 
+### Use New Role 🚀
+
+Once applied, start using your role through [Zodiac Pilot](https://pilot.gnosisguild.org), our browser extension for streamlined Safe execution with support for roles and more complex account setups.
+
 ## Folder Structure and Conventions
 
 - [contracts.ts](./contracts.ts) – Lists all contracts that are used as targets in permissions
