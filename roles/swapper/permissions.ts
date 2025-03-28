@@ -12,11 +12,13 @@ export default [
   allowAction.cowswap.swap({
     sell: [USDC, DAI, USDS, USDT],
     buy: [USDC, DAI, USDS, USDT],
+    feeAmountBp: 0,
   }),
 
   // allow buying WETH with WBTC
   allowAction.cowswap.swap({
     sell: [WBTC],
     buy: [WETH],
+    feeAmountBp: 0,
   }),
 ] satisfies Permissions;
