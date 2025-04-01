@@ -1500,7 +1500,7 @@ esprima@^4.0.0:
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
 
-ethers@^6.13.2, ethers@^6.13.4, ethers@^6.9.2:
+ethers@^6.13.2, ethers@^6.13.4, ethers@^6.13.5, ethers@^6.9.2:
   version "6.13.5"
   resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.13.5.tgz#8c1d6ac988ac08abc3c1d8fabbd4b8b602851ac4"
   integrity sha512-+knKNieu5EKRThQJWwqaJ10a6HE9sSehGeqWN65//wE7j47ZpFhKAnHB/JJFibwwg61I/koxaPsXbXpD/skNOQ==
@@ -3333,10 +3333,23 @@ zodiac-roles-deployments@^2.4.0:
   resolved "https://registry.yarnpkg.com/zodiac-roles-deployments/-/zodiac-roles-deployments-2.4.0.tgz#4a0ab85c5ee7a4443d1b26cceebfa70d61ce6553"
   integrity sha512-kdD4UKoWAF7YMgnFA8Gw3ZHvmkwssxFT8Q+mKBAUHBhCzl2qS6FI+bcW/yOsNnOS79Ba3dVR36B8oG50rAA5gg==
 
-zodiac-roles-sdk@^2.21.0, zodiac-roles-sdk@^2.21.1:
+zodiac-roles-deployments@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/zodiac-roles-deployments/-/zodiac-roles-deployments-2.4.1.tgz#1159d3072d84daf43560757d009024e1f2ad6799"
+  integrity sha512-GsgZKHVtG15zvIy3LaqqyesHR+HZRyDGST2M9xfvxZaiZuaxGH7SPS0W8c34nTQ42yDEjT87AcuzZP8smSHWeA==
+
+zodiac-roles-sdk@^2.21.1:
   version "2.21.1"
   resolved "https://registry.yarnpkg.com/zodiac-roles-sdk/-/zodiac-roles-sdk-2.21.1.tgz#b257e9781446dc4924f50e9403a5e97ceed495f7"
   integrity sha512-b9mA5uj3zHFGxshQPGYGwhhMGE3JDUSOIgrgE5NvI6bhbo7ugKfxdDtEiAGisLmQfD3HY89lk/I3/c9zAmKlEA==
   dependencies:
     ethers "^6.13.2"
     zodiac-roles-deployments "^2.4.0"
+
+zodiac-roles-sdk@^2.21.2:
+  version "2.21.2"
+  resolved "https://registry.yarnpkg.com/zodiac-roles-sdk/-/zodiac-roles-sdk-2.21.2.tgz#5d6fa70c3c98b206bef78cab110e237ed48c6fad"
+  integrity sha512-ydddxprR28NotF/IqM80Sv/BfN3HiDFbOukY5yrlRJVXGQsmskzUBHY1BKGG+w+hqMjDMarG9170kxUQygBI1Q==
+  dependencies:
+    ethers "^6.13.5"
+    zodiac-roles-deployments "^2.4.1"
