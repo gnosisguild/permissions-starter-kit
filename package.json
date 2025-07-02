@@ -13,6 +13,7 @@
     "@gnosis-guild/eth-sdk-client": "^0.1.6",
     "@safe-global/api-kit": "^2.3.0",
     "@types/node": "^20.12.7",
+    "@types/yargs": "^17.0.33",
     "defi-kit": "^2.17.0",
     "ethers": "^6.13.4",
     "open": "^8.4.2",
