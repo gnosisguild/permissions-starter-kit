@@ -7,7 +7,7 @@ import { getAddress } from "ethers";
 import {
   Permission,
   PermissionSet,
-  checkIntegrity,
+  targetIntegrity,
   processPermissions,
   chains,
   fetchRolesMod,
@@ -27,7 +27,7 @@ const post = async (
 ) => {
   const awaitedPermissions = await Promise.all(permissions);
   const { targets, annotations } = processPermissions(awaitedPermissions);
-  checkIntegrity(targets);
+  targetIntegrity(targets);
 
   return await postRole({ targets, annotations, members });
 };
