@@ -49,6 +49,23 @@
     typechain "^8.0.0"
     zod "^3.11.5"
 
+"@gnosis-guild/eth-sdk@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@gnosis-guild/eth-sdk/-/eth-sdk-0.4.0.tgz#f5c36b3386d53d0c1a44469a5b4dccc054aea6cf"
+  integrity sha512-tvpdXlSPe48mKrrvk9mT3mpiy/YKOknV91jbjGQLVEwj0moBIjS9lrhsR1oE/do9ml9xX0dud0RbC3I6RgHFjw==
+  dependencies:
+    "@gnosis-guild/typechain-ethers-v6" "^0.5.3"
+    chalk "^4.1.2"
+    commander "^8.3.0"
+    debug "^4.3.2"
+    fs-extra "^10.0.0"
+    glob "7.1.7"
+    got "^11.8.2"
+    mkdirp "^1.0.4"
+    ora "^5.4.1"
+    typechain "^8.0.0"
+    zod "^3.11.5"
+
 "@gnosis-guild/typechain-ethers-v6@^0.5.3":
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/@gnosis-guild/typechain-ethers-v6/-/typechain-ethers-v6-0.5.5.tgz#5f42a8aa40ea53ac72ff68fee35276448a74b1b3"
