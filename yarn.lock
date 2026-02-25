@@ -19,6 +19,32 @@
   dependencies:
     openapi3-ts "^4.1.2"
 
+"@cowprotocol/sdk-common@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@cowprotocol/sdk-common/-/sdk-common-0.5.0.tgz#44c7b4259ce23cabf5d383856a30b86849a590d0"
+  integrity sha512-vCUSs1kufjwSNrJDwAmjpKqHiFWg2JakEeODYw6vL4DJTEqy2IAZ0fYVO0ojKlmz+VDTBJkov2A/PjP1tO0+xA==
+  dependencies:
+    "@cowprotocol/sdk-config" "0.6.3"
+
+"@cowprotocol/sdk-config@0.6.3", "@cowprotocol/sdk-config@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@cowprotocol/sdk-config/-/sdk-config-0.6.3.tgz#ac91e01867a155191cff158baa41dd27d7370e4d"
+  integrity sha512-0Fodk5O8pqslt+jkOL1ybg9V0bokFA+/DF02TZjQcPtSAmnmuep6zEjaY2+s4WVdB98YDb0RkgI/Ejn/E2TaAA==
+  dependencies:
+    exponential-backoff "^3.1.1"
+    limiter "^2.1.0"
+
+"@cowprotocol/sdk-order-book@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@cowprotocol/sdk-order-book/-/sdk-order-book-0.5.1.tgz#90fd534937008e27122f5c40ca7e5bb7317a6b0f"
+  integrity sha512-dXqmQs2ju+1Q0nhdEk6/Sav+W8Hur8A85Yja3AzYR/Iw0ogkLt/hSUUup86lOEpizg8fZ4boP+urAn6LMir7bA==
+  dependencies:
+    "@cowprotocol/sdk-common" "0.5.0"
+    "@cowprotocol/sdk-config" "0.6.3"
+    cross-fetch "^3.2.0"
+    exponential-backoff "^3.1.2"
+    limiter "^3.0.0"
+
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz#00629c35a688e05a88b1cda684fb9d5e73f000a1"
@@ -582,6 +608,13 @@ create-require@^1.1.0:
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
 
+cross-fetch@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.2.0.tgz#34e9192f53bc757d6614304d9e5e6fb4edb782e3"
+  integrity sha512-Q+xVJLoGOeIMXZmbUK4HYk+69cQH6LudR0Vu/pRm2YlU/hDV9CiS0gKUMaWY5f2NeUH9C1nV3bsTlCo0FsTV1Q==
+  dependencies:
+    node-fetch "^2.7.0"
+
 cross-spawn@^7.0.0:
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.5.tgz#910aac880ff5243da96b728bc6521a5f6c2f2f82"
@@ -694,6 +727,11 @@ eventemitter3@5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-5.0.1.tgz#53f5ffd0a492ac800721bb42c66b841de96423c4"
   integrity sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==
+
+exponential-backoff@^3.1.1, exponential-backoff@^3.1.2:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/exponential-backoff/-/exponential-backoff-3.1.3.tgz#51cf92c1c0493c766053f9d3abee4434c244d2f6"
+  integrity sha512-ZgEeZXj30q+I0EN+CbSSpIyPaJ5HVQD18Z1m+u1FXbAeT94mr1zw50q4q6jiiC447Nl/YTcIYSAftiGqetwXCA==
 
 find-replace@^3.0.0:
   version "3.0.0"
@@ -904,12 +942,29 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+just-performance@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/just-performance/-/just-performance-4.3.0.tgz#cc2bc8c9227f09e97b6b1df4cd0de2df7ae16db1"
+  integrity sha512-L7RjvtJsL0QO8xFs5wEoDDzzJwoiowRw6Rn/GnvldlchS2JQr9wFYPiwZcDfrbbujEKqKN0tvENdbjXdYhDp5Q==
+
 keyv@^4.0.0:
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-4.5.4.tgz#a879a99e29452f942439f2a405e3af8b31d4de93"
   integrity sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==
   dependencies:
     json-buffer "3.0.1"
+
+limiter@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/limiter/-/limiter-2.1.0.tgz#d38d7c5b63729bb84fb0c4d8594b7e955a5182a2"
+  integrity sha512-361TYz6iay6n+9KvUUImqdLuFigK+K79qrUtBsXhJTLdH4rIt/r1y8r1iozwh8KbZNpujbFTSh74mJ7bwbAMOw==
+  dependencies:
+    just-performance "4.3.0"
+
+limiter@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/limiter/-/limiter-3.0.0.tgz#03556b76d1a81f547caeecc6b83ecc6f24495715"
+  integrity sha512-hev7DuXojsTFl2YwyzUJMDnZ/qBDd3yZQLSH3aD4tdL1cqfc3TMnoecEJtWFaQFdErZsKoFMBTxF/FBSkgDbEg==
 
 lodash.camelcase@^4.3.0:
   version "4.3.0"
@@ -1499,6 +1554,11 @@ zod@^3.11.5, zod@^3.22.2:
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.24.2.tgz#8efa74126287c675e92f46871cfc8d15c34372b3"
   integrity sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==
 
+zodiac-roles-deployments@3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/zodiac-roles-deployments/-/zodiac-roles-deployments-3.2.3.tgz#c5a23c334ed97a44e7701c9f9576ff9e9c6f8742"
+  integrity sha512-QzZyGKzIYEhl3AmjRIhNTMk98XAjCh6ItX19cYKTbm3ud32nYH3I3OOMEegkGN6aZSUieph0Z9M4ZVwQC9nMLQ==
+
 zodiac-roles-deployments@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/zodiac-roles-deployments/-/zodiac-roles-deployments-3.0.0.tgz#b46b7167b185d1f75dad2b25783c0861feac7273"
@@ -1511,3 +1571,13 @@ zodiac-roles-sdk@^3.0.1:
   dependencies:
     ethers "^6.13.5"
     zodiac-roles-deployments "^3.0.0"
+
+zodiac-roles-sdk@^3.4.4:
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/zodiac-roles-sdk/-/zodiac-roles-sdk-3.4.4.tgz#121c7a4ee7e6519abb0e987a65dcea55b89fae86"
+  integrity sha512-J0N38TLGX31ur1Z0CzOrBWh47E17dcpCIjopucjtYWoABewk4mS6q1YVALNf37WCUTNtWaunNXhU4n/vo2sx9w==
+  dependencies:
+    "@cowprotocol/sdk-config" "^0.6.3"
+    "@cowprotocol/sdk-order-book" "^0.5.1"
+    ethers "^6.13.5"
+    zodiac-roles-deployments "3.2.3"
