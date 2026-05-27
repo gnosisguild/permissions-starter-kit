@@ -1,5 +1,7 @@
+.env
 .DS_Store
 
+/.zodiac
 /node_modules
 /build
 /.lib/eth-sdk/tmp
