@@ -14,7 +14,9 @@
     "@safe-global/api-kit": "^2.3.0",
     "@types/node": "^20.12.7",
     "@types/yargs": "^17.0.33",
-    "defi-kit": "^2.17.0",
+    "@zodiac-os/sdk": "^1.11.0",
+    "defi-kit": "^2.26.10",
+    "dotenv": "^17.0.0",
     "ethers": "^6.13.4",
     "open": "^8.4.2",
     "prettier": "^3.0.0",
@@ -22,7 +24,7 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.6.3",
     "yargs": "^17.7.2",
-    "zodiac-roles-sdk": "^3.4.4"
+    "zodiac-roles-sdk": "^4.0.0"
   },
   "packageManager": "yarn@1.22.19+sha512.ff4579ab459bb25aa7c0ff75b62acebe576f6084b36aa842971cf250a5d8c6cd3bc9420b22ce63c7f93a0857bc6ef29291db39c3e7a23aab5adfd5a4dd6c5d71"
 }
