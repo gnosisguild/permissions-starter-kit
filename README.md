@@ -7,6 +7,17 @@ The provided tooling automatically applies updates in a consistent and efficient
 
 Learn more about the motivation behind this approach in our blog ["Permissions as Code"](https://engineering.gnosisguild.org/posts/permissions-as-code).
 
+> [!NOTE]
+> **Already using this template?** GitHub template repositories don't auto-sync, so updates to this kit don't reach your project automatically. To pull in the latest changes (most recently, the `apply` script's migration to [`@zodiac-os/sdk`](https://github.com/gnosisguild/permissions-starter-kit/pull/14)):
+>
+> ```bash
+> git remote add upstream https://github.com/gnosisguild/permissions-starter-kit.git
+> git fetch upstream
+> git merge upstream/main --allow-unrelated-histories
+> ```
+>
+> Resolve any conflicts (typically `package.json`, files under `.lib/`, and `apply.ts`), then run `yarn install`.
+
 ## Getting Started
 
 [Use this template](https://github.com/new?template_name=permissions-starter-kit&template_owner=gnosisguild) to create a repository for your roles configuration.
