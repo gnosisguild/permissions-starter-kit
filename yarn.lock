@@ -387,10 +387,10 @@
     zod "^4.1.11"
     zodiac-roles-sdk "^3.4.4"
 
-"@zodiac-os/sdk@^1.11.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@zodiac-os/sdk/-/sdk-1.11.0.tgz#1eb9b8ed3d101b9a309ff2819ff267aa7f013485"
-  integrity sha512-W++RwXoDFymLiiBL/EZK0LJ2CdM55e30AhMk+5z2FZuz/TD4jwbnk+xoYugvI53+xtqnWcBaOuIHxN4tRCIOkg==
+"@zodiac-os/sdk@^1.11.2":
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/@zodiac-os/sdk/-/sdk-1.11.2.tgz#85e0754d6995237ec7567b5d9afe9e3c6433e809"
+  integrity sha512-cBFg+MSDJa3+9HxSlYMGNsR/bYHSM8VK+S7uinGF3Irb7qFyjqNJoxm/C2l23vrjes4bT/lPNNox+u4uCHJ0Dg==
   dependencies:
     "@epic-web/invariant" "1.0.0"
     "@zodiac-os/api-types" "1.6.0"
