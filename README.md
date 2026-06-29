@@ -1,6 +1,6 @@
 # permissions-starter-kit
 
-Out of the box starting point for managing [Zodiac Roles](https://roles.gnosisguild.org) permissions
+Out of the box starting point for managing [Zodiac Roles](https://docs.roles.gnosisguild.org) permissions
 
 Keep the configuration of your Zodiac Roles Modifier as declarative statements in code.
 The provided tooling automatically applies updates in a consistent and efficient way.
@@ -33,7 +33,7 @@ To initialize the project, open a terminal window and run the following command 
 
 Roles are defined as folders in the [roles/](./roles) directory.
 Folder names correspond to [role keys](#role-keys).
-The template includes two example roles: `eth_wrapping` and `position_management`.
+The template includes four example roles: `creditor_debtor`, `eth_wrapping`, `position_management`, and `swapper`.
 You can either rename these folders or create new ones for your role.
 
 Inside the role folder, create or edit the _permissions.ts_ file with the following boilerplate content:
@@ -128,7 +128,8 @@ For example, to apply the role `eth_wrapping` to a mainnet Roles mod at address 
 yarn apply eth_wrapping eth:0x1234123412341234123412341234123412341234
 ```
 
-This will direct you to the Roles app, where you can review the updates that will be made to your role and confirm them by signing the apply transaction.
+The first time you apply, the CLI authorizes this directory with your [Zodiac organization](https://app.zodiac.eco): it opens a browser to mint an API key and saves it to `.env`.
+It then pushes the update to your workspace and prints a link to the Zodiac app, where you can review the changes and deploy them by signing the transaction.
 
 Applying permissions for the first time will create a new role.
 Subsequent applications will update the existing role, efficiently removing, updating, and adding permissions so that the role configuration on chain accurately reflects the permissions defined in code.
