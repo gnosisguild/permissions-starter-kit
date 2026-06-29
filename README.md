@@ -7,8 +7,9 @@ The provided tooling automatically applies updates in a consistent and efficient
 
 Learn more about the motivation behind this approach in our blog ["Permissions as Code"](https://engineering.gnosisguild.org/posts/permissions-as-code).
 
-> [!NOTE]
-> **Already using this template?** GitHub template repositories don't auto-sync, so updates to this kit don't reach your project automatically. To pull in the latest changes (most recently, the `apply` script's migration to [`@zodiac-os/sdk`](https://github.com/gnosisguild/permissions-starter-kit/pull/14)):
+> [!TIP] > **Need to manage more than role permissions?** Check out the [Zodiac Constellation Template](https://github.com/gnosisguild/zodiac-constellation-template) — a more powerful base for managing entire account constellations as code. Beyond updating role permissions, it lets you manage Safe owners, configure Delay mod setups, and deploy entire account setups in one go, rather than clicking through web interfaces.
+
+> [!NOTE] > **Already using this template?** GitHub template repositories don't auto-sync, so updates to this kit don't reach your project automatically. To pull in the latest changes (most recently, the `apply` script's migration to [`@zodiac-os/sdk`](https://github.com/gnosisguild/permissions-starter-kit/pull/14)):
 >
 > ```bash
 > git remote add upstream https://github.com/gnosisguild/permissions-starter-kit.git
